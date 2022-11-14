@@ -5,7 +5,7 @@ import Logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <div className="header">
-      <img src={Logo} alt="Logo" className="logo" />
+      <img src={Logo} loading="lazy" alt="Logo" className="logo" />
 
       <ul className="header-menu">
         <li>Home</li>
