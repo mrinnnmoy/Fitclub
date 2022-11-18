@@ -28,7 +28,8 @@ const Testimonials = () => {
             <div className="right-t">
                 <div></div>
                 <div></div>
-                <img src={testimonialsData[selected].image} alt="" />
+                <img src={testimonialsData[selected].image}
+                    loading="lazy" alt="" />
 
                 <div className="arrows">
                     <img onClick={() => {
@@ -37,12 +38,14 @@ const Testimonials = () => {
                             : setSelected((prev) => prev - 1);
                     }}
                         src={leftArrow}
+                        loading="lazy"
                         alt="" />
                     <img onClick={() => {
                         selected === tLength - 1
                             ? setSelected(0)
                             : setSelected((prev) => prev + 1);
                     }}
+                        loading="lazy"
                         src={rightArrow} alt="" />
                 </div>
             </div>
