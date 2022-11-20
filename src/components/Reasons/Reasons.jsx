@@ -22,7 +22,7 @@ const Reasons = () => {
             <div className="right-r">
                 <span>Some reason</span>
 
-                <div>
+                <div className="details-header">
                     <span className="stroke-text">Why</span>
                     <span>choose us?</span>
                 </div>
